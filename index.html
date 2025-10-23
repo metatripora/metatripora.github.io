@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Metatripora — Travel Metasearch</title>
+<meta name="description" content="Metatripora is a metasearch for Slovak travel agencies — compare offers, track prices, and request partner data feeds." />
+<style>
+:root { --fg:#0f172a; --muted:#475569; --bg:#f8fafc; --card:#ffffff; --accent:#2563eb; }
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";color:var(--fg);background:var(--bg);}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:960px;margin:0 auto;padding:24px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.brand{font-weight:700;font-size:20px}
+nav a{margin-left:16px}
+.hero{background:linear-gradient(180deg,#eef2ff,transparent);border-radius:20px;padding:48px 32px;margin:16px 0}
+.hero h1{font-size:40px;line-height:1.1;margin:0 0 12px}
+.hero p{color:var(--muted);margin:0 0 20px}
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;background:var(--fg);color:#fff;font-weight:600}
+.btn.secondary{background:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.card{grid-column:span 12;background:var(--card);border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+@media(min-width:768px){.card{grid-column:span 6}}
+footer{margin:40px 0;color:var(--muted)}
+/* Contact form styles */
+form{display:grid;gap:12px}
+input,textarea{width:100%;padding:12px 14px;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+textarea{min-height:120px}
+.small{font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="brand">Metatripora</div>
+<nav>
+<a href="#about">About</a>
+<a href="#features">Features</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<section class="hero">
+<h1>Metatripora</h1>
+<p>Metasearch for Slovak travel agencies. Compare trips across partners, get price‑drop alerts, and integrate data feeds fast.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn" href="#features">See Features</a>
+<a class="btn secondary" href="#contact">Contact Us</a>
+</div>
+</section>
+
+
+<section id="about" class="grid">
+<div class="card">
+<h2>About</h2>
+<p>Metatripora helps travelers find the best package holidays by aggregating offers from Slovak travel agencies in one clean interface. For partners, we support quick onboarding via CSV/XML/JSON feeds and standard affiliate or CPL models.</p>
+</html>

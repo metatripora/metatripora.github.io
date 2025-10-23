@@ -1,59 +1,158 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Metatripora — Travel Metasearch</title>
-<meta name="description" content="Metatripora is a Slovak travel metasearch with price tracking, partner data feeds, and AI features like price forecasts, alerts, and conversational search." />
-<style>
-:root { --fg:#0f172a; --muted:#475569; --bg:#f8fafc; --card:#ffffff; --accent:#2563eb; }
-*{box-sizing:border-box}
-html,body{padding:0;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";color:var(--fg);background:var(--bg);}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:960px;margin:0 auto;padding:24px}
-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
-.brand{font-weight:700;font-size:20px}
-nav a{margin-left:16px}
-.hero{background:linear-gradient(180deg,#eef2ff,transparent);border-radius:20px;padding:48px 32px;margin:16px 0}
-.hero h1{font-size:40px;line-height:1.1;margin:0 0 12px}
-.hero p{color:var(--muted);margin:0 0 20px}
-.btn{display:inline-block;padding:12px 18px;border-radius:12px;background:var(--fg);color:#fff;font-weight:600}
-.btn.secondary{background:var(--accent)}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
-.card{grid-column:span 12;background:var(--card);border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
-@media(min-width:768px){.card{grid-column:span 6}}
-footer{margin:40px 0;color:var(--muted)}
-/* Contact form styles */
-form{display:grid;gap:12px}
-input,textarea{width:100%;padding:12px 14px;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
-textarea{min-height:120px}
-.small{font-size:12px;color:var(--muted)}
-</style>
-</head>
-<body>
-<div class="container">
-<header>
-<div class="brand">Metatripora</div>
-<nav>
-<a href="#about">About</a>
-<a href="#features">Features</a>
-<a href="#ai">AI</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Metatripora — cestovný metavyhľadávač</title>
+    <meta name="description" content="Metatripora je slovenský cestovný metavyhľadávač s prehľadným porovnávaním, sledovaním cien a jednoduchým napojením partnerských dátových feedov. Ponúka aj AI funkcie: predikcie cien, upozornenia a konverzačné vyhľadávanie." />
+    <style>
+      :root { --fg:#0f172a; --muted:#475569; --bg:#f8fafc; --card:#ffffff; --accent:#1e3a8a; }
+      *{box-sizing:border-box}
+      html,body{padding:0;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";color:var(--fg);background:var(--bg);}
+      a{color:var(--accent);text-decoration:none}
+      a:hover{text-decoration:underline}
+      .container{max-width:1000px;margin:0 auto;padding:24px}
+      header{position:sticky;top:0;background:var(--bg);z-index:10;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+      .brand{font-weight:800;font-size:22px;letter-spacing:.2px}
+      nav a{margin-left:16px}
+      .hero{background:linear-gradient(180deg,#e2e8f0,transparent);border-radius:20px;padding:48px 32px;margin:16px 0}
+      .hero h1{font-size:42px;line-height:1.1;margin:0 0 12px}
+      .hero p{color:var(--muted);margin:0 0 20px;max-width:60ch}
+      .btn{display:inline-block;padding:12px 18px;border-radius:12px;background:var(--accent);color:#fff;font-weight:700;border:1px solid var(--accent);transition:transform .08s ease, box-shadow .12s ease}
+      .btn:hover{transform:translateY(-1px)}
+      .btn.secondary{background:transparent;color:var(--accent)}
+      .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+      .card{grid-column:span 12;background:var(--card);border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+      @media(min-width:768px){.card{grid-column:span 6}}
+      footer{margin:40px 0;color:var(--muted)}
+      form{display:grid;gap:12px}
+      input,textarea{width:100%;padding:12px 14px;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+      textarea{min-height:120px}
+      .small{font-size:12px;color:var(--muted)}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">Metatripora</div>
+        <nav>
+          <a href="#about">O projekte</a>
+          <a href="#features">Funkcie</a>
+          <a href="#ai">AI</a>
+          <a href="#partners">Pre cestovky</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+      </header>
 
+      <section class="hero">
+        <h1>Metatripora</h1>
+        <p>Metavyhľadávač slovenských cestovných kancelárií. Porovnávajte férové konečné ceny, sledujte vývoj cien v čase a vybavte napojenie feedu bez zbytočnej administratívy.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn" href="#features">Zobraziť funkcie</a>
+          <a class="btn secondary" href="#partners">Pre cestovné kancelárie</a>
+        </div>
+      </section>
 
-<section class="hero">
-<h1>Metatripora</h1>
-<p>Metasearch for Slovak travel agencies. Compare trips across partners, get price‑drop alerts, and integrate data feeds fast.</p>
-<div style="display:flex;gap:12px;flex-wrap:wrap">
-<a class="btn" href="#features">See Features</a>
-<a class="btn secondary" href="#contact">Contact Us</a>
-</div>
-</section>
+      <section id="about" class="grid">
+        <div class="card">
+          <h2>O projekte</h2>
+          <p>Metatripora je rýchly a prehľadný metavyhľadávač so zameraním na slovenské cestovné kancelárie. Agregujeme balíkové zájazdy od overených partnerov, normalizujeme údaje (termíny, typy izieb, strava, konečná cena) a odstraňujeme duplicity, aby ste porovnávali ponuky férovo a bez neporiadku.</p>
+          <p>Pre partnerov je napojenie jednoduché: prijímame CSV/XML/JSON feedy, mapujeme polia na náš špecifikovaný formát a podporujeme affiliate aj CPL model. V partnerskom prehľade vidíte stav feedu, chyby a štatistiky klikov/leadov.</p>
+        </div>
+        <div class="card">
+          <h2>Hlavné výhody</h2>
+          <ul>
+            <li>Rýchle napojenie agentúrnych feedov</li>
+            <li>Transparentné konečné ceny a presné filtre</li>
+            <li>História cien a upozornenia na pokles</li>
+            <li>Pripravené na affiliate a CPL tracking</li>
+            <li>Slovenčina aj angličtina</li>
+          </ul>
+        </div>
+      </section>
 
+      <section id="features" class="grid">
+        <div class="card">
+          <h2>Agregované vyhľadávanie</h2>
+          <p>Porovnajte ponuky viacerých slovenských CK na jednom mieste. Zlučujeme duplicity a zobrazujeme transparentné konečné ceny vrátane poplatkov.</p>
+          <p><a href="#contact">Stať sa partnerom</a></p>
+        </div>
+        <div class="card">
+          <h2>Napojenie dátových feedov</h2>
+          <p>Podpora CSV / XML / JSON. Mapovanie polí, validácia a nočné kontroly udržiavajú dáta aktuálne a spoľahlivé.</p>
+          <p><a href="#contact">Vyžiadať špecifikáciu</a></p>
+        </div>
+        <div class="card">
+          <h2>Upozornenia na pokles ceny</h2>
+          <p>Vytvorte si watchlist pre hotely alebo termíny a dostanete informáciu, keď sa cena zmení alebo sa uvoľnia izby.</p>
+          <p><a href="#contact">Viac o upozorneniach</a></p>
+        </div>
+        <div class="card">
+          <h2>Prehľady pre partnerov</h2>
+          <p>Jednoduchý dashboard s prehľadom klikov, leadov a kvality feedu, aby ste mali výkon vždy pod kontrolou.</p>
+          <p><a href="#contact">Partnerský portál</a></p>
+        </div>
+      </section>
 
-<section id="about" class="grid">
-<div class="card">
-<h2>About</h2>
+      <section id="ai" class="grid">
+        <div class="card">
+          <h2>AI predikcie cien (beta)</h2>
+          <p>Zobrazujeme pravdepodobnosť poklesu ceny alebo vypredania na základe histórie feedov a sezónnosti.</p>
+        </div>
+        <div class="card">
+          <h2>História cien a prehľady</h2>
+          <p>Grafy minulých cien priamo pri ponuke pomáhajú rozhodnúť sa, kedy rezervovať. Detekcia anomálií upozorní na extrémy a chyby.</p>
+        </div>
+        <div class="card">
+          <h2>Inteligentné odporúčania</h2>
+          <p>Odporúčania podobných zájazdov podľa kvality hotela, stravovania, lokality a recenzií pomocou vektorového vyhľadávania.</p>
+        </div>
+        <div class="card">
+          <h2>Konverzačné vyhľadávanie</h2>
+          <p>Prirodzený jazyk v slovenčine aj angličtine (napr. „rodinný hotel v Antalyi do 900 € v júni“).</p>
+        </div>
+      </section>
+
+      <section id="partners" class="grid">
+        <div class="card">
+          <h2>Pre cestovné kancelárie</h2>
+          <p>Jednoduché napojenie a čistá analytika. Podporujeme affiliate aj CPL modely spolupráce.</p>
+          <ul>
+            <li><strong>Napojenie feedu:</strong> CSV / XML / JSON, štandardné polia (hotel, destinácia, termín, izba, strava, cena).</li>
+            <li><strong>Validácia:</strong> mapovanie polí, kontrola povinných atribútov, denné aktualizácie.</li>
+            <li><strong>Meranie:</strong> kliky, odoslané dopyty/lead‑y, konverzie; UTM označovanie.</li>
+            <li><strong>Podpora:</strong> rýchle vyriešenie chýb vo feede a export technických logov.</li>
+          </ul>
+          <p><a class="btn" href="#contact">Požiadať o špecifikáciu feedu</a></p>
+        </div>
+        <div class="card">
+          <h2>Ako začať</h2>
+          <ol>
+            <li>Napíšte nám na <a href="mailto:metatripora@gmail.com">metatripora@gmail.com</a>.</li>
+            <li>Pošleme vám schému polí a testovaciu URL.</li>
+            <li>Po validácii feedu spustíme sledovanie cien a meranie výkonu.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contact" class="grid">
+        <div class="card" style="grid-column:span 12">
+          <h2>Kontakt</h2>
+          <p>Preferujete email? <a href="mailto:metatripora@gmail.com">metatripora@gmail.com</a></p>
+          <form action="https://formspree.io/f/your-id" method="POST">
+            <input type="text" name="name" placeholder="Vaše meno" required>
+            <input type="email" name="email" placeholder="Váš email" required>
+            <textarea name="message" placeholder="Vaša správa"></textarea>
+            <button class="btn" type="submit">Odoslať</button>
+            <p class="small">Tip: Formulár môžete napojiť na vlastný Formspree URL alebo ho odstrániť a ponechať iba emailový odkaz vyššie.</p>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="y"></span> Metatripora · Postavené na GitHub Pages
+      </footer>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  </body>
+</html>
